@@ -5,7 +5,7 @@ public class Unicode {
 		
 		char simbol;
 
-		for (int i = 33;  i < 126; i++) {
+		for (int i = 33;  i <= 126; i++) {
 			simbol = (char)(i);
 			System.out.print(simbol);
 		}
