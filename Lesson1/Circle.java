@@ -8,7 +8,7 @@ public class Circle {
 
 	// Выведите на консоль с помощью цикла for все числа от [0, 20]
 	public static void CircleOne() {
-		for (int i = 0; i <= 20 ; i++ ) {
+		for (int i = 0; i <= 20 ; i++) {
 			System.out.println("Число: " + i);
 		}
 	}
@@ -30,8 +30,7 @@ public class Circle {
             if (i % 2 == 1) {
             	result += i;
             }
-            i++;
-            
+            i++;  
         } while(i <= 20);
         System.out.println("Результат суммы нечетный чисел: " + result);
 	}
