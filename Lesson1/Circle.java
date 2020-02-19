@@ -32,7 +32,7 @@ public class Circle {
             }
             i++;  
         } while(i <= 20);
-        System.out.println("Результат суммы нечетный чисел: " + result);
+        System.out.println("Результат суммы нечетных чисел: " + result);
 	}
 	
 }

@@ -17,7 +17,7 @@ public class MyFirstGame {
 			if (enteredNumber < guessNumber) {
 				System.out.println("Введеное вами число меньше");
 			} else if(enteredNumber > guessNumber) {
-				System.out.println("Введеное вами число Больше");
+				System.out.println("Введеное вами число больше");
 			}
 		}	
 		System.out.println("Вы угадали! Это: " + guessNumber);	

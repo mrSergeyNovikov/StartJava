@@ -36,7 +36,7 @@ public class Calculator {
 		if(operation == '^') {
 			result = firstNumber * degree;
 			System.out.println("Возведение в степень первого числа... Ответ: " + result);
-			result = result = secondNumber * degree;
+			result = secondNumber * degree;
 			System.out.println("Возведение в степень второго числа... Ответ: " + result);
 		}
 
