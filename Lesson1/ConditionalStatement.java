@@ -1,11 +1,10 @@
 public class ConditionalStatement {
 
 	public static void main(String[] args) {
-
 		byte yourAge = 25;
 		boolean isMan = true;
-		float yourGrow = 1.75f;
-		char isNameStartWithLetter = '\u0418';
+		float grow = 1.75f;
+		char firstNameLetter = 'И';
 
 
 		if(yourAge > 20) {
@@ -20,20 +19,18 @@ public class ConditionalStatement {
 			System.out.println("Жаль, вы не мужчина");
 		}
 
-		if(yourGrow < 1.80) {
+		if(grow < 1.80) {
 			System.out.println("Вы среднего роста");
 		} else {
 			System.out.println("Вы очень высокий");
 		}
 
-		if(isNameStartWithLetter == '\u041c') {
-			System.out.println("Наверно вас зовут михаил");
-		} else if(isNameStartWithLetter == '\u0418') {
-			System.out.println("Наверно вас зовут игорь");
+		if(firstNameLetter == 'М') {
+			System.out.println("Наверно вас зовут Михаил");
+		} else if(firstNameLetter == 'И') {
+			System.out.println("Наверно вас зовут Игорь");
 		} else {
 			System.out.println("Я не заю как вас зовут");
 		}
-		
 	}
-
 }

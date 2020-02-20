@@ -9,7 +9,6 @@ public class MyFirstGame {
 
 
 	public static void main(String[] args) {
-
 		int guessNumber = 12;
 		int enteredNumber;
 
