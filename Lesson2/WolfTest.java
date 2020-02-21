@@ -1,4 +1,4 @@
-public WolfTest {
+public class WolfTest {
 
 	public static void main(String[] args) {
 		Wolf wolf = new Wolf();
@@ -13,7 +13,7 @@ public WolfTest {
 		System.out.println("Вес: " + wolf.weight);
 		wolf.color = "Черный";
 		System.out.println("Окрас: " + wolf.color);
-
+		
 		wolf.go();
 		wolf.sit();
 		wolf.run();
