@@ -7,22 +7,17 @@ public class Wolf {
 	String color;
 
 	public void go() {
-
 	}
 
 	public void sit() {
-
 	}
 
 	public void run() {
-
 	}
 
 	public void earn() {
-
 	}
 
 	public void hunt() {
-
 	}
 }

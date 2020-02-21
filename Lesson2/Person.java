@@ -8,24 +8,17 @@ public class Person {
 	int weight = 73;
 
 	public void walk() {
-
 	}
 
 	public void speakEnglish() {
-		
 	}
 
 	public void learnJava() {
-		
 	}
 
 	public void jump() {
-		
 	}
 
 	public void run() {
-		
 	}
-
-
 }
