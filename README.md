@@ -19,3 +19,8 @@
 ```sh
 javac -encoding utf8 имя_класса.java
 ```
+
+Для отображения байт-кода класса необходимо в консоли перейти в папку, в которой находится файл MyFirstApp.class, и написать:
+```sh
+    javap -c -s -verbose MyFirstApp
+```
