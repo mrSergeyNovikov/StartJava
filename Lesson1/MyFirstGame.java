@@ -13,10 +13,10 @@ public class MyFirstGame {
 		while(enteredNumber != guessNumber ) {
 			if (enteredNumber < guessNumber) {
 				System.out.println("Введеное вами число меньше");
-				enteredNumber ++;
+				enteredNumber++;
 			} else if(enteredNumber > guessNumber) {
 				System.out.println("Введеное вами число больше");
-				enteredNumber --;
+				enteredNumber--;
 			}
 		}	
 		System.out.println("Вы угадали! Это: " + guessNumber);	

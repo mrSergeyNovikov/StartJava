@@ -5,9 +5,9 @@ public class Calculator {
 // выведите на экран результат работы калькулятора с помощью System.out.println()
 
 	public static void main(String[] args) {
-		int firstNumber = 10;
-		int secondNumber = 20;
-		char operation = '%';
+		int firstNumber = 4;
+		int secondNumber = 5;
+		char operation = '^';
 		double result = 0;
 
 		if(operation == '+') {
@@ -16,16 +16,19 @@ public class Calculator {
 		} else if(operation == '-') {
 			result = firstNumber - secondNumber;
 			System.out.println("Вычитание... Ответ: " + result);
-		}else if(operation == '/') {
+		} else if(operation == '/') {
 			result = firstNumber / secondNumber;
 			System.out.println("Деление... Ответ: " + result);
 		} else if(operation == '*') {
 			result = firstNumber * secondNumber;
 			System.out.println("Умножение... Ответ: " + result);
-		}else if(operation == '^') {
-			result = firstNumber * secondNumber;
+		} else if(operation == '^') {
+			result = 1;
+			for (int i = 0; i < secondNumber; i++ ) {
+				result *= firstNumber;
+			}
 			System.out.println("Возведение в степень... Ответ: " + result);
-		}else if(operation == '%') {
+		} else if(operation == '%') {
 			result = firstNumber % secondNumber;
 			System.out.println("Деление по модулю... Ответ: " + result);
 		}	
