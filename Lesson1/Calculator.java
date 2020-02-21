@@ -24,7 +24,7 @@ public class Calculator {
 			System.out.println("Умножение... Ответ: " + result);
 		} else if(operation == '^') {
 			result = 1;
-			for (int i = 0; i < secondNumber; i++ ) {
+			for (int i = 0; i < secondNumber; i++) {
 				result *= firstNumber;
 			}
 			System.out.println("Возведение в степень... Ответ: " + result);
