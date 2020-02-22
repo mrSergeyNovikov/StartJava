@@ -6,7 +6,6 @@ public class Calculator {
 	int circleTwo = 1;
 	double result = 0;
 
-
 // метод для арифметических операций
 	public void runCalculator() {
 		while (circleOne != 0) {
@@ -49,10 +48,11 @@ public class Calculator {
 				default:
 					System.out.println("Неверный символ. Ответа не будет.");
 			}
+
 			continueCalculator();
 			circleOne = 0;
-			}
 		}
+	}
 
 // метод для продолжения программы
 	public void continueCalculator() {
