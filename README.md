@@ -24,3 +24,7 @@ javac -encoding utf8 имя_класса.java
 ```sh
     javap -c -s -verbose MyFirstApp
 ```
+При случайном добавлении  git add файла. Как сделать так что бы файл или папку git не видел и не индексировал?
+```sh
+    Написать в консоли git rm -r --cached out, а после занести папку out в файл .gitignore
+```
