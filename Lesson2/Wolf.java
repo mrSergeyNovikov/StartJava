@@ -6,21 +6,6 @@ public class Wolf {
 	private double weight;
 	private String color;
 
-	public void go() {
-	}
-
-	public void sit() {
-	}
-
-	public void run() {
-	}
-
-	public void earn() {
-	}
-
-	public void hunt() {
-	}
-
 	// сеттеры и геттеры
 	public String getName() {
 		return name;
@@ -43,9 +28,10 @@ public class Wolf {
 	}
 
 	public void setAge(int age) {
-		this.age = age;
-		if (age > 8) {
-			System.out.println("Некорректный возраст");
+		if (age < 8) {
+			this.age = age;
+		} else {
+			System.out.println("Некорректный возраст. Присвойте меньше 8");
 		}
 	}
 
@@ -63,5 +49,20 @@ public class Wolf {
 
 	public void setColor(String color) {
 		this.color = color;
+	}
+
+	public void go() {
+	}
+
+	public void sit() {
+	}
+
+	public void run() {
+	}
+
+	public void earn() {
+	}
+
+	public void hunt() {
 	}
 }
