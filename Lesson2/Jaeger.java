@@ -92,12 +92,11 @@ public class Jaeger {
 	}
 
 	public String scanKaiju() {
-		int typeKiaju =2;
+		int typeKiaju = 2;
 		String result = "";
 		if(typeKiaju == 1) {
 			result = "Kaiju 1 уровня";
-		}
-		else if (typeKiaju == 2) {
+		} else if (typeKiaju == 2) {
 			result = "Kaiju 2 уровня";
 		}
 		System.out.println(result);

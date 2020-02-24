@@ -11,6 +11,7 @@ public class JaegerTest {
 		jaegerOne.setSpeed(7);
 		jaegerOne.setStrange(8);
 		jaegerOne.setArmor(6);
+
 		System.out.println("Егерь: " + jaegerOne.getModelName());
 		System.out.println("Модель: " + jaegerOne.getMark());
 		System.out.println("Статус:" + jaegerOne.getStatus());
@@ -21,6 +22,7 @@ public class JaegerTest {
 		System.out.println("Сила: " + jaegerOne.getStrange());
 		System.out.println("Броня: " + jaegerOne.getArmor());
 		System.out.println("");
+
 		jaegerOne.move();
 		jaegerOne.dodge();
 		System.out.println("");
@@ -35,7 +37,6 @@ public class JaegerTest {
 		jaegerTwo.setSpeed(5);
 		jaegerTwo.setStrange(7);
 		jaegerTwo.setArmor(4);
-
 		System.out.println("Егерь: " + jaegerTwo.getModelName());
 		System.out.println("Модель: " + jaegerTwo.getMark());
 		System.out.println("Статус:" + jaegerTwo.getStatus());
@@ -46,6 +47,7 @@ public class JaegerTest {
 		System.out.println("Сила: " + jaegerTwo.getStrange());
 		System.out.println("Броня: " + jaegerTwo.getArmor());
 		System.out.println("");
+
 		jaegerTwo.scanKaiju();
 		jaegerTwo.drift();
 	}
