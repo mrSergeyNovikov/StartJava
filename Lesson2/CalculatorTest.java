@@ -10,13 +10,22 @@ public class CalculatorTest {
 			System.out.println("Введите первое число: ");
 			int firstNumber = scan.nextInt();
 			System.out.println("Введите знак математической операции: ");
-			String operator = scan.next();
+			char operator = scan.next().charAt(0);
 			System.out.println("Введите второе число: ");
 			int secondNumber = scan.nextInt();
 			calc.calculate(firstNumber, operator, secondNumber);
+
 			System.out.println("Хотите продолжить? [да/нет]: ");
-			String answerOnQuestion = scan.nextLine();
-			calc.continueCalculator(answerOnQuestion);
+			String answerOnQuestion = scan.next();
+			if (answerOnQuestion.equals("да")) {
+				System.out.println("Ответ - да. Продолжайте");
+				continue;
+			} else if (answerOnQuestion.equals("нет")) {
+				System.out.println("Ответ - нет...Выход из программы");
+				break;
+			} else {
+				System.out.println("Хотите продолжить? [да/нет]: ");
+			}
 			break;
 		}
 	}

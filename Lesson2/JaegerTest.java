@@ -1,17 +1,7 @@
 public class JaegerTest {
 
 	public static void main(String[] args) {
-		Jaeger jaegerOne = new Jaeger();
-		jaegerOne.setModelName("Gipsy Danger");
-		jaegerOne.setMark("Mark-3");
-		jaegerOne.setStatus("Destroyed");
-		jaegerOne.setOs("Blue Spark 4.1");
-		jaegerOne.setHeight(79.25f);
-		jaegerOne.setWeight(1.900f);
-		jaegerOne.setSpeed(7);
-		jaegerOne.setStrange(8);
-		jaegerOne.setArmor(6);
-
+		Jaeger jaegerOne = new Jaeger("Gipsy Danger", "Mark-3", "Destroyed", "Blue Spark 4.1", 79.25f, 1.900f, 7, 8, 6);
 		System.out.println("Егерь: " + jaegerOne.getModelName());
 		System.out.println("Модель: " + jaegerOne.getMark());
 		System.out.println("Статус:" + jaegerOne.getStatus());
@@ -27,16 +17,7 @@ public class JaegerTest {
 		jaegerOne.dodge();
 		System.out.println("");
 
-		Jaeger jaegerTwo = new Jaeger();
-		jaegerTwo.setModelName("Coyote Tango");
-		jaegerTwo.setMark("Mark-1");
-		jaegerTwo.setStatus("Destroyed");
-		jaegerTwo.setOs("Nauthlus-4 Zirca Sync");
-		jaegerTwo.setHeight(85.34f);
-		jaegerTwo.setWeight(2.312f);
-		jaegerTwo.setSpeed(5);
-		jaegerTwo.setStrange(7);
-		jaegerTwo.setArmor(4);
+		Jaeger jaegerTwo = new Jaeger("Coyote Tango", "Mark-1", "Destroyed", "Nauthlus-4 Zirca Sync", 85.34f, 2.312f, 5, 7, 4);
 		System.out.println("Егерь: " + jaegerTwo.getModelName());
 		System.out.println("Модель: " + jaegerTwo.getMark());
 		System.out.println("Статус:" + jaegerTwo.getStatus());
