@@ -4,8 +4,8 @@ public class GuessNumberTest {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		String answerOnQuestion;
-		Guess guess = new Guess(new Player("Виктор", 1), new Player("Сергей", 2));
+		String answerOnQuestion = "да";
+		GuessNumber guess = new GuessNumber(new Player("Виктор", 1), new Player("Сергей", 2));
 
 		System.out.println("Игра. Угадай чило от 0 до 100...");
 		System.out.println();
@@ -18,10 +18,15 @@ public class GuessNumberTest {
 			System.out.println("Игрок " + guess.player2.getName() + " вводите число: ");
 			guess.checkEnteredNumber();
 			if (guess.guessNumber == guess.enteredNumber) {
-				do {
+				while(true) {
 					System.out.println("Хотите продолжить? [да/нет]: ");
 					answerOnQuestion = scan.next();
-				} while (answerOnQuestion.equals("нет"));
+					if (answerOnQuestion.equals("нет") || answerOnQuestion.equals("да")) {
+						break;
+					} else {
+						continue;
+					}
+				}
 			}
 		} while (answerOnQuestion.equals("да"));
 		System.out.println("Пока! ");

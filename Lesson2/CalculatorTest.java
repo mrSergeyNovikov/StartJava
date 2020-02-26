@@ -18,9 +18,7 @@ public class CalculatorTest {
 			while (true) {
 				System.out.println("Хотите продолжить? [да/нет]: ");
 				answerOnQuestion = scan.next();
-				if (answerOnQuestion.equalsIgnoreCase("да")) {
-					break;
-				} else if(answerOnQuestion.equalsIgnoreCase("нет")) {
+				if (answerOnQuestion.equalsIgnoreCase("да") || answerOnQuestion.equalsIgnoreCase("нет")) {
 					break;
 				} else {
 					continue;
