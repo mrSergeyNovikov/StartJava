@@ -21,14 +21,17 @@ public class GuessNumberTest {
 				while(true) {
 					System.out.println("Хотите продолжить? [да/нет]: ");
 					answerOnQuestion = scan.next();
-					if (answerOnQuestion.equals("нет") || answerOnQuestion.equals("да")) {
+					if (answerOnQuestion.equals("нет") || ) {
 						break;
-					} else {
+					} else if(answerOnQuestion.equals("да")) {
+						guess.guessNumber = (int)(Math.random() * 100) + 1;
+						break;
+					}else {
 						continue;
 					}
 				}
 			}
 		} while (answerOnQuestion.equals("да"));
-		System.out.println("Пока! ");
+		System.out.println("Пока!");
 	}
 }

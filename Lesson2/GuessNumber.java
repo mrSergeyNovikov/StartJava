@@ -13,8 +13,6 @@ public class GuessNumber {
 	}
 
 	public void checkEnteredNumber() {
-		
-
 		System.out.println("число для угадывания " +guessNumber);
 		enteredNumber = scan.nextInt();
 		if (enteredNumber < guessNumber) {
