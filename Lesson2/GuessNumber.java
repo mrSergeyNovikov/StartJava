@@ -5,8 +5,11 @@ public class GuessNumber {
 	Scanner scan = new Scanner(System.in);
 
 	public void checkEnteredNumber(int enteredNumber) {
-		System.out.println("число для угадывания " +guessNumber);
+		System.out.println("число для угадывания " + guessNumber);
 
+		Player player = new Player();
+		Player player1 = new Player("Виктор", 1);
+		Player player2 = new Player("Сергей", 2);
 		while (true) {
 			if (enteredNumber < guessNumber) {
 				System.out.println("Введеное вами число меньше задуманного");

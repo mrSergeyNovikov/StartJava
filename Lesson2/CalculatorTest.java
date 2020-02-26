@@ -15,19 +15,12 @@ public class CalculatorTest {
 			int secondNumber = scan.nextInt();
 			calc.calculate(firstNumber, operator, secondNumber);
 
-			System.out.println("Хотите продолжить? [да/нет]: ");
-			String answerOnQuestion = scan.next();
-			if (answerOnQuestion.equals("да")) {
-				System.out.println("Ответ - да. Продолжайте");
+			calc.continueCalculator();
+			if (calc.continueCalculator().equals("да")) {
 				continue;
-			} else if (answerOnQuestion.equals("нет")) {
-				System.out.println("Ответ - нет...Выход из программы");
-				break;
 			} else {
-				//не понятно как реализовать " ввел ни "да" ни "нет", а что-то другое — снова выведите сообщение ". Как продолжить игру или завершить в этом случае?
-				System.out.println("Хотите продолжить? [да/нет]: ");
+				break;
 			}
-			break;
 		}
 	}
 }
