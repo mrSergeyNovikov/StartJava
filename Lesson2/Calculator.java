@@ -37,32 +37,4 @@ public class Calculator {
 				System.out.println("Неверный символ. Ответа не будет.");
 		}
 	}
-
-// метод для продолжения программы
-	public String continueCalculator() {
-		String answerOnQuestion;
-		Scanner scan = new Scanner(System.in);
-
-		System.out.println("Хотите продолжить? [да/нет]: ");
-		while(true) {
-			answerOnQuestion = scan.next();
-			 if (answerOnQuestion.equals("да")) {
-				System.out.println("Ответ - да. Продолжайте");
-				return answerOnQuestion;
-			} else if (answerOnQuestion.equals("нет")) {
-				System.out.println("Ответ - нет...Выход из программы");
-				return answerOnQuestion;
-			} else {
-				while (true) {
-					System.out.println("Хотите продолжить? [да/нет]: ");
-					answerOnQuestion = scan.next();
-					if(answerOnQuestion.equals("да") || answerOnQuestion.equals("нет")) {
-						return answerOnQuestion;
-					} else {
-						continue;
-					}
-				}
-			}
-		}
-	}
 }

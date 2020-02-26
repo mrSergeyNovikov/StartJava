@@ -5,8 +5,9 @@ public class CalculatorTest {
 	public static void main(String[] args) {
 		Calculator calc = new Calculator();
 		Scanner scan = new Scanner(System.in);
+		String answerOnQuestion;
 
-		while (true) {
+		do {
 			System.out.println("Введите первое число: ");
 			int firstNumber = scan.nextInt();
 			System.out.println("Введите знак математической операции: ");
@@ -14,13 +15,10 @@ public class CalculatorTest {
 			System.out.println("Введите второе число: ");
 			int secondNumber = scan.nextInt();
 			calc.calculate(firstNumber, operator, secondNumber);
-
-			calc.continueCalculator();
-			if (calc.continueCalculator().equals("да")) {
-				continue;
-			} else {
-				break;
-			}
-		}
+				do {
+					System.out.println("Хотите продолжить? [да/нет]: ");
+					answerOnQuestion = scan.next();
+				} while (answerOnQuestion.equals("да") && answerOnQuestion.equals("нет"));
+		} while(answerOnQuestion.equals("да"));
 	}
 }
