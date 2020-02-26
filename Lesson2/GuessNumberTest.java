@@ -17,10 +17,12 @@ public class GuessNumberTest {
 			guess.checkEnteredNumber();
 			System.out.println("Игрок " + guess.player2.getName() + " вводите число: ");
 			guess.checkEnteredNumber();
-			do {
-				System.out.println("Хотите продолжить? [да/нет]: ");
-				answerOnQuestion = scan.next();
-			} while (answerOnQuestion.equals("нет"));
+			if (guess.guessNumber == guess.enteredNumber) {
+				do {
+					System.out.println("Хотите продолжить? [да/нет]: ");
+					answerOnQuestion = scan.next();
+				} while (answerOnQuestion.equals("нет"));
+			}
 		} while (answerOnQuestion.equals("да"));
 		System.out.println("Пока! ");
 	}
