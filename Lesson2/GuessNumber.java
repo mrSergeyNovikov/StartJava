@@ -1,22 +1,28 @@
 import java.util.Scanner;
 
 public class GuessNumber {
-	int guessNumber = (int)(Math.random() * 100) + 1;
-	Scanner scan = new Scanner(System.in);
+    int guessNumber = (int)(Math.random() * 100) + 1;
+    Scanner scan = new Scanner(System.in);
+    Player player1;
+    Player player2;
 
-	public void checkEnteredNumber(int enteredNumber) {
-		System.out.println("число для угадывания " + guessNumber);
+    public Guess(Player player1, Player player2) {
+        this.player1 = player1;
+        this.player2 = player2;
+    }
 
-		Player player = new Player();
-		Player player1 = new Player("Виктор", 1);
-		Player player2 = new Player("Сергей", 2);
-		while (true) {
-			if (enteredNumber < guessNumber) {
-				System.out.println("Введеное вами число меньше задуманного");
-			} else if (enteredNumber > guessNumber) {
-				System.out.println("Введеное вами число больше задуманного ");
-			}
-			break;
-		}
-	}
+    public void checkEnteredNumber() {
+        int enteredNumber;
+
+        System.out.println("число для угадывания " +guessNumber);
+        enteredNumber = scan.nextInt();
+
+        if (enteredNumber < guessNumber) {
+            System.out.println("Введеное вами число меньше задуманного");
+        } else if (enteredNumber > guessNumber) {
+            System.out.println("Введеное вами число больше задуманного ");
+        } else {
+            System.out.println("Победитель!!!");
+        }
+    }
 }
