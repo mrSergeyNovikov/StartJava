@@ -15,16 +15,11 @@ public class CalculatorTest {
 			System.out.println("Введите второе число: ");
 			int secondNumber = scan.nextInt();
 			calc.calculate(firstNumber, operator, secondNumber);
-			while (true) {
+			do {
 				System.out.println("Хотите продолжить? [да/нет]: ");
 				answerOnQuestion = scan.next();
-				if (answerOnQuestion.equalsIgnoreCase("да") || answerOnQuestion.equalsIgnoreCase("нет")) {
-					break;
-				} else {
-					continue;
-				}
-			}
-			} while(answerOnQuestion.equalsIgnoreCase("да"));
+			} while (!answerOnQuestion.equalsIgnoreCase("да") && !answerOnQuestion.equalsIgnoreCase("нет"));
+		} while(answerOnQuestion.equalsIgnoreCase("да"));
 		System.out.println("До свидания. Спасибо за игру...");
 	}
 }
