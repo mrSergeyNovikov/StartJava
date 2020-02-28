@@ -14,6 +14,8 @@ public class GuessNumberTest {
 		System.out.println("Игрок " + 2 + " введите имя: ");
  		Player player2= new Player(scan.next());
 
+ 		GuessNumber guessNumber = new GuessNumber(player1, player2);
+
 		do {
 
 
