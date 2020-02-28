@@ -9,16 +9,18 @@ public class GuessNumberTest {
 		System.out.println("Игра. Угадай чило от 0 до 100...");
 		System.out.println();
 
-		System.out.println("Игрок " + 1 + " введите имя: ");
+		System.out.println("Игрок первый" + " введите имя: ");
 		Player player1 = new Player(scan.next());
-		System.out.println("Игрок " + 2 + " введите имя: ");
- 		Player player2= new Player(scan.next());
+		System.out.println("Игрок второй" + " введите имя: ");
+		Player player2= new Player(scan.next());
 
- 		GuessNumber guessNumber = new GuessNumber(player1, player2);
+		GuessNumber guessNumber = new GuessNumber(player1, player2);
 
 		do {
-
-
+			guessNumber.enteredNumbersPlayers(player1);
+			guessNumber.checkEnteredNumber(player1);
+			guessNumber.enteredNumbersPlayers(player2);
+			guessNumber.checkEnteredNumber(player2);
 			do {
 				System.out.print("Хотите продолжить? [да/нет]: ");
 				answerOnQuestion = scan.next();
