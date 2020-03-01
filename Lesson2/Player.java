@@ -15,7 +15,7 @@ public class Player {
 		return number;
 	}
 
-	public String setNumber(int Number) {
-	this.number = number;
+	public void setNumber(int Number) {
+		this.number = number;
 	}
 }

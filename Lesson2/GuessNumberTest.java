@@ -15,17 +15,14 @@ public class GuessNumberTest {
 		Player player2= new Player(scan.next());
 
 		GuessNumber guessNumber = new GuessNumber(player1, player2);
-
+		
 		do {
-			guessNumber.enteredNumbersPlayers(player1);
-			guessNumber.checkEnteredNumber(player1);
-			guessNumber.enteredNumbersPlayers(player2);
-			guessNumber.checkEnteredNumber(player2);
+			guessNumber.playGame();
 			do {
 				System.out.print("Хотите продолжить? [да/нет]: ");
 				answerOnQuestion = scan.next();
 			} while (!answerOnQuestion.equalsIgnoreCase("да") && !answerOnQuestion.equalsIgnoreCase("нет"));
 		} while (answerOnQuestion.equalsIgnoreCase("да"));
-		System.out.println("Пока! ");
+		System.out.println("Пока! Спасибо за игру");
 	}
 }
