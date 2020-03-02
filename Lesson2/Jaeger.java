@@ -71,16 +71,28 @@ public class Jaeger {
 		int typeKiaju = 2;
 		String result = "";
 		if(typeKiaju == 1) {
-			result = "Kaiju 1 уровня";
+			result = "Сканирование...Kaiju 1 уровня найден";
 		} else if (typeKiaju == 2) {
-			result = "Kaiju 2 уровня";
+			result = "Сканирование....Kaiju 2 уровня найден";
 		}
 		System.out.println(result);
 		return result;
 	}
 
 	public void dodge() {
-		System.out.println("Егерь уколняется...");
+		System.out.println("Егерь уклоняется...");
 	}
 
+	@Override
+	public String toString() {
+		return "Егерь: '" + modelName + '\'' + "\n" +
+				"Модель: '" + mark + '\'' + "\n" +
+				"Статус:'" + status + '\'' + "\n" +
+				"Орерационная система:'" + os + '\'' + "\n" +
+				"Высота: " + height + "\n" +
+				"Вес: " + weight + "\n" +
+				"Скорость: " + speed + "\n" +
+				"Сила: " + strange + "\n" +
+				"Броня:" + armor;
+	}
 }
