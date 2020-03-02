@@ -15,22 +15,22 @@ public class GuessNumber {
 
 	public void playGame() {
 		isWinner = true;
-		guessNumber = (int)(Math.random() * 100) + 1;
+		guessNumber = (int)(Math.random() * 101);
 		do {
-			enteredNumbersPlayers(player1);
+			enterNumber(player1);
 			checkEnteredNumber(player1);
-			enteredNumbersPlayers(player2);
+			enterNumber(player2);
 			checkEnteredNumber(player2);
 		} while (isWinner);
 	}
 
-	public void enteredNumbersPlayers(Player player) {
+	public void enterNumber(Player player) {
 		System.out.println(player.getName() +" Введите число: ");
 		player.setNumber(scan.nextInt());
 	}
 
 	public void checkEnteredNumber(Player player) {
-		System.out.println("* число для угадывания * " +guessNumber);
+		System.out.println("* число для угадывания * " + guessNumber);
 		if (player.getNumber() == guessNumber) {
 			System.out.println("Победитель!!!");
 			isWinner = false;
