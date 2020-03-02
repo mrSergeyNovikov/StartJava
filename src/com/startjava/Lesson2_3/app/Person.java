@@ -1,3 +1,5 @@
+package com.startjava.Lesson2_3.app;
+
 public class Person {
 
 	String name = "Иван";

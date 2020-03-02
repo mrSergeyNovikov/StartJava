@@ -1,19 +1,4 @@
-# Занятие первое
-
-### Темы занятия
-
-- Подготовка рабочего окружения
-- Первая программа
-- Ручная компиляция и запуск программы
-- Этапы компиляции и запуска
-- Байт-код
-- Переменные: примитивные типы данных
-- Ветвление: if, if else
-- Циклы: for, while, do while
-- Система управления версиями Git
-- Настройка локального репозитория
-- Домашнее задание
-- Советы для тех, кто выполняет домашнее задание
+# Шпаргалка
 
 Для того, что бы русский текст корректно отображался в консоли, программы необходимо компилировать с помощью специального ключа:
 ```sh
@@ -22,9 +7,62 @@ javac -encoding utf8 имя_класса.java
 
 Для отображения байт-кода класса необходимо в консоли перейти в папку, в которой находится файл MyFirstApp.class, и написать:
 ```sh
-    javap -c -s -verbose MyFirstApp
+javap -c -s -verbose MyFirstApp
 ```
 При случайном добавлении  git add файла. Как сделать так что бы файл или папку git не видел и не индексировал?
 ```sh
-    Написать в консоли git rm -r --cached out, а после занести папку out в файл .gitignore
+Написать в консоли git rm -r --cached out, а после занести папку out в файл .gitignore
+```
+
+
+Как, используя класс Scanner получить тип данных char?
+```sh
+Например, так: char mathOperation = reader.next().charAt(0);
+```
+
+### Используем пакеты
+В каталоге src создадим дополнительные каталоги, чтобы путь к файлу выглядел так: src/com/qwertovsky/helloworld/HelloWorld.java.
+
+Поместим наш класс в пакет с именем com.qwertovsky.helloworld. Для этого добавим в начало файла строчку
+```sh
+package com.qwertovsky.helloworld;
+```
+```sh
+    '---src
+        '---com
+            '---qwertovsky
+                '---helloworld
+                    '---HelloWorld.java 
+```
+Компилируем:
+```sh
+javac -d out src/com/qwertovsky/helloworld/HelloWorld.java
+```
+Запускаем:
+```sh
+java -classpath ./out com.qwertovsky.helloworld.HelloWorld
+```
+```sh
+Пример:
+    HelloWorld
+    '---out
+    '   '---com
+    '       '---qwertovsky
+    '          '---helloworld
+    '             '---HelloWorld.class
+    '---src
+        '---com
+            '---qwertovsky
+                '---helloworld
+                    '---HelloWorld.java 
+```
+
+При использовании нескольких файлов для запуска используем следующую команду:
+Компилируем:
+```sh
+javac -sourcepath ./src -d out src/com/qwertovsky/helloworld/HelloWorld.java
+```
+Запускаем:
+```sh
+java -classpath ./out com.qwertovsky.helloworld.HelloWorld
 ```

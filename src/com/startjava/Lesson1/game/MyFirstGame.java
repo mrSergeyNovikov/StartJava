@@ -1,3 +1,5 @@
+package com.startjava.Lesson1.game;
+
 public class MyFirstGame {
 // Напишите игру Угадай число:
 // компьютер "загадывает" целое число от 0 до 100, которое вам необходимо угадать

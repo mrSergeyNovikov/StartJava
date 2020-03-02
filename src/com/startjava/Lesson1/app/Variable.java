@@ -1,3 +1,5 @@
+package com.startjava.Lesson1.app;
+
 public class Variable {
 
 	public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package com.startjava.Lesson2_3.beast;
+
 public class WolfTest {
 
 	public static void main(String[] args) {

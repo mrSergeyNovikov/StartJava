@@ -1,3 +1,5 @@
+package com.startjava.Lesson1.unicode;
+
 public class Unicode {
 // Выведите в цикле символы кодировки Unicode в диапазоне [33, 126]
 

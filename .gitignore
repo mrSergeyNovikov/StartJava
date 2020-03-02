@@ -1,3 +1,9 @@
 # Игнорировать все файлы в директории Lesson1
 Lesson1/*.class
 Lesson2/*.class
+
+# IntelliJ
+.idea/
+.idea_modules/
+
+/out/
